@@ -1,3 +1,19 @@
+### Keys
+
+`alt-Esc` to enter scene save mode.
+
+`alt-Fn` to edit corresponding script.
+
+### Metronome
+
+```
+M
+M i
+M.ACT b
+```
+
+Get metronome interval.  Set metronome interval to `i`ms.  Set metronome state to boolean `b`.
+
 ### Binary scale degrees
 
 ```
@@ -15,14 +31,28 @@ Set a pattern `p` to its working end (such that `PN.NEXT` would return the begin
 PN.I p PN.START p
 ```
 
-Get at current index:
-
-```
-PN.HERE p
-```
-
 Increment then get:
 
 ```
 PN.NEXT p
 ```
+
+### Hardware
+
+```
+V x
+```
+
+Convert `x` to volts.
+
+```
+CV n v
+```
+
+Set CV `n` to value `v`.
+
+```
+PRM
+```
+
+Get the value of the PARAM knob.
